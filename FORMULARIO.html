@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS</title>
+</head>
+<body>
+    <HEADER>
+        <h1>FORMULARIO EN HMTL5</h1>
+    </HEADER>
+    <main>
+        <section>
+            <h2>FORMULARIO DE CONTACTO</h2>
+            <form action="contactos.html" method="post">
+                <p>
+                    <label form="nombre">
+                        Nombre: <input id="nombre" type="text" name="nombre" placeholder="Nombre" required>
+                    </label>
+                </p>
+                <p>
+                    <label for="apellido">
+                        Apellido: <input id="apellido" type="text" name="apellido" placeholder="Apellido" required>
+                    </label>
+                </p>
+                <p>
+                    <label for="edad">
+                        Edad: <input id="edad" type="number" name="edad" placeholder="edad" required min="1" max="110">
+                    </label>
+                </p>
+                <input type="submit" value="Enviar datos" formtarget="_blank">
+                <input type="reset" value="Resetear Formulario">
+                <button type="submit">Elemento botom de tipo submit</button>
+            </form>
+        </section>
+        <section>
+            <h2>Formulario de Contacto 2</h2>
+            <form action="" method="post">
+                <p>
+                    <label for="radio1">
+                        Opcion 1: <input id="radio1" type="radio" name="radioBoton1">
+                    </label>
+                </p>
+                <p>
+                    <label for="opcion2">
+                        Opcion 2: <input id="opcion2" type="radio" name="radioBoton2">
+                    </label>
+                </p>
+                <input type="submit" value="Enviar datos" formtarget="_blank">
+            </form>
+        </section>
+        <section>
+            <h2>Formulario de Contacto3</h2>
+            <form action=""method="post">
+                <p>
+                    <label for="text">
+                        Nombre: <input id="text" type="text" name="text">
+                    </label>
+                </p>
+                <p>
+                    <label for="textarea">
+                        Dame una descripcion. <br>
+                        <textarea name="textarea" id="textarea" cols="30" rows="10">Soy text area</textarea>
+                    </label>
+                </p>
+                <input type="submit" value="Enviar datos" formtarget="_blank">
+            </form>
+        </section>
+        <section>
+            <h2>Formulario de contacto4</h2>
+            <h3>cual es tu comida favorita?</h3>
+            <form action=""method="post">
+                <p>
+                    <label for="checkbox">
+                        Empanadas: <input id="checkbox" type="checkbox" name="checkbox">
+                    </label>
+                </p>
+                <p>
+                    <label for="comida2">
+                        Milanesas: <input id="comida2" type="checkbox" name="comida2">
+                    </label>
+                </p>
+                <p>
+                    <label for="comida3">
+                        Arepas: <input id="comida3" type="checkbox" name="comida3" required>
+                    </label>
+                </p>
+                <input type="submit" value="enviar datos" formtarget="_blank">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
